@@ -29,6 +29,7 @@ public class WeatherDataExtractor {
 			br = new BufferedReader(filereader);
 			while (( currentLine = br.readLine()) != null) {
 				currentLine = currentLine.trim();
+				currentLine = currentLine.replaceAll("\\*", "");
 				Pattern pattern = Pattern.compile("^[\\d]{1,2}[\\s]*[\\d]{2}[\\s]*[\\d]{2}");
 				Matcher matcher = pattern.matcher(currentLine);
 				if(matcher.find()){
