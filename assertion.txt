@@ -1,0 +1,5 @@
+Enabling assertion
+1) java -ea com.java.assertion.class
+This will enable assertion in that particular class
+2) java -ea com.java
+This will enable assertion in all the classes present in com.java..
